@@ -1,0 +1,138 @@
+[
+  {
+    "id": 1,
+    "title": "God Of War",
+    "image": "https://i.3djuegos.com/juegos/11552/god_of_war_ps4__nombre_temporal_/fotos/ficha/god_of_war_ps4__nombre_temporal_-3754795.webp",
+    "price": 20000,
+    "launchDate": "20-03-2004",
+    "develop": "Santa Monica",
+    "plataform": "ps5"
+  },
+
+  {
+    "id": 2,
+    "title": "Assassins Creed Mirage",
+    "image": "https://i.3djuegos.com/juegos/17817/assassin__039_s_creed__2022_/fotos/ficha/assassin__039_s_creed__2022_-5741467.webp",
+    "price": 40000,
+    "launchDate": "05-10-2023",
+    "develop": "Ubisoft",
+    "plataform": "pc"
+  },
+  {
+    "id": 3,
+    "title": "Cyberpunk 2077",
+    "image": "https://i.3djuegos.com/juegos/8873/cyberpunk/fotos/ficha/cyberpunk-4889717.webp",
+    "price": 34000,
+    "launchDate": "05-10-2023",
+    "develop": "CD Projekt RED",
+    "plataform": "ps4"
+  },
+  {
+    "id": 4,
+    "title": "EA Sport FC 24",
+    "image": "https://i.3djuegos.com/juegos/18522/ea_sports_fc/fotos/ficha/ea_sports_fc-5823578.webp",
+    "price": 35000,
+    "launchDate": "29-09-2023",
+    "develop": "Electronic Arts",
+    "plataform": "xbox-one"
+  },
+  {
+    "id": 5,
+    "title": "GTA V",
+    "image": "https://i.3djuegos.com/juegos/5065/grand_theft_auto_v/fotos/ficha/grand_theft_auto_v-2654943.webp",
+    "price": 40000,
+    "launchDate": "17-09-2013",
+    "develop": "Rockstar Games",
+    "plataform": "xbox-x"
+  },
+  {
+    "id": 6,
+    "title": "Red dead redeption 2",
+    "image": "https://i.3djuegos.com/juegos/13424/red_dead_3__nombre_temporal_/fotos/ficha/red_dead_3__nombre_temporal_-5009894.webp",
+    "price": 45000,
+    "launchDate": "16-10-2018",
+    "develop": "Rockstar Games",
+    "plataform": "pc"
+  },
+  {
+    "id": 7,
+    "title": "Uncharted 4",
+    "image": "https://i.3djuegos.com/juegos/8184/uncharted_4/fotos/ficha/uncharted_4-4946892.webp",
+    "price": 30000,
+    "launchDate": "10-05-2016",
+    "develop": "Naughty Dog",
+    "plataform": "ps4"
+  },
+  {
+    "id": 8,
+    "title": "God Of War : Ragnarok",
+    "image": "https://i.3djuegos.com/juegos/17544/god_of_war_ragnarok/fotos/ficha/god_of_war_ragnarok-5732812.webp",
+    "price": 30000,
+    "launchDate": "10-05-2016",
+    "develop": "Santa Monica Studio",
+    "plataform": "ps5"
+  },
+  {
+    "id": 9,
+    "title": "Halo Infinite",
+    "image": "https://i.3djuegos.com/juegos/14620/halo_6/fotos/ficha/halo_6-5566514.webp",
+    "price": 30000,
+    "launchDate": "15-11-2021",
+    "develop": "343 Industries",
+    "plataform": "xbox-x"
+  },
+  {
+    "id": 10,
+    "title": "Diablo IV",
+    "image": "https://i.3djuegos.com/juegos/16734/diablo_4/fotos/ficha/diablo_4-5818170.webp",
+    "price": 34000,
+    "launchDate": "05-06-2023",
+    "develop": "Blizzard Entertainment",
+    "plataform": "pc"
+  },
+  {
+    "id": 11,
+    "title": "Marvel's Spider-Man 2",
+    "image": "https://i.3djuegos.com/juegos/18168/marvel__039_s_spiderman_2/fotos/ficha/marvel__039_s_spiderman_2-5824801.webp",
+    "price": 36000,
+    "launchDate": "20-10-2023",
+    "develop": "Insomniac Games",
+    "plataform": "ps5"
+  },
+  {
+    "id": 12,
+    "title": "Gears 5",
+    "image": "https://i.3djuegos.com/juegos/15940/gears_of_war_5/fotos/ficha/gears_of_war_5-4889120.webp",
+    "price": 40000,
+    "launchDate": "10-09-2019",
+    "develop": "Insomniac Games",
+    "plataform": "xbox-one"
+  },
+  {
+    "id": 13,
+    "title": "The Last of Us: Parte II",
+    "image": "https://i.3djuegos.com/juegos/14236/the_last_of_us_2/fotos/ficha/the_last_of_us_2-4977781.webp",
+    "price": 40000,
+    "launchDate": "19-06-2020",
+    "develop": "Naughty Dog",
+    "plataform": "ps4"
+  },
+  {
+    "id": 14,
+    "title": "Star Wars Jedi: Survivor",
+    "image": "https://i.3djuegos.com/juegos/18535/star_wars_jedi_survivor_/fotos/ficha/star_wars_jedi_survivor_-5797412.webp",
+    "price": 40000,
+    "launchDate": "28-04-2023",
+    "develop": "Respawn Entertainment",
+    "plataform": "xbox-x"
+  },
+  {
+    "id": 15,
+    "title": "Ryse: Son of Rome",
+    "image": "https://i.3djuegos.com/juegos/6192/codename_kingdoms/fotos/ficha/codename_kingdoms-2314874.webp",
+    "price": 40000,
+    "launchDate": "22-11-2013",
+    "develop": "Crytek",
+    "plataform": "xbox-one"
+  }
+]
