@@ -1,6 +1,7 @@
 import "./NavBar.css";
 import { Link } from "react-router-dom";
-
+import { IconButton, Badge } from "@mui/material";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 const NavBar = () => {
   const isActive = (match) => {
     return match ? "active-link" : "";
@@ -36,6 +37,15 @@ const NavBar = () => {
         <li>
           <Link to={`/pc`} className={isActive}>
             PC
+          </Link>
+        </li>
+        <li>
+          <Link to={`/misCompras`} className={isActive}>
+            <IconButton aria-label="cart" size="large">
+              <Badge badgeContent={0} color="primary">
+                <ShoppingCartIcon sx={{ color: "white" }} />
+              </Badge>
+            </IconButton>
           </Link>
         </li>
       </ul>

@@ -6,17 +6,17 @@ import "./Item.css";
 import { useParams } from "react-router-dom";
 
 const ItemListContainer = () => {
-  const [juegos, setjuegos] = useState([]);
+  const [juegos, setJuegos] = useState([]);
   const [titulo, setTiulo] = useState();
   const plataforma = useParams().plataforma;
   console.log(plataforma);
   useEffect(() => {
     pedirJuegos().then((res) => {
       if (plataforma) {
-        setjuegos(res.filter((prod) => prod.plataform === plataforma));
+        setJuegos(res.filter((prod) => prod.plataform === plataforma));
         setTiulo(plataforma);
       } else {
-        setjuegos(res);
+        setJuegos(res);
         setTiulo("Juegos");
       }
     });
