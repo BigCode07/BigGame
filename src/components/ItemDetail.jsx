@@ -6,10 +6,26 @@ import {
   Button,
   Typography,
 } from "@mui/material";
-
+import ItemCount from "./ItemCount";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import { useContext, useState } from "react";
+import { CartContext } from "./context/CartContext";
 
 const ItemDetail = ({ juego }) => {
+  const { carrito, agregarAlCarrito } = useContext(CartContext);
+  console.log(carrito);
+  const [cantidad, setCantidad] = useState(1);
+
+  const handleRestar = () => {
+    setCantidad((prevCantidad) => (prevCantidad > 1 ? prevCantidad - 1 : 1));
+  };
+
+  const handleSumar = () => {
+    setCantidad((prevCantidad) =>
+      prevCantidad < juego.stock ? prevCantidad + 1 : prevCantidad
+    );
+  };
+
   return (
     <div className="container">
       <Card sx={{ display: "flex" }}>
@@ -39,13 +55,20 @@ const ItemDetail = ({ juego }) => {
           <Typography variant="subtitle1" component="div">
             {juego.develop}
           </Typography>
-
           <Typography variant="h6">${juego.price}</Typography>
+          <ItemCount
+            cantidad={cantidad}
+            handleSumar={handleSumar}
+            handleRestar={handleRestar}
+          />
           <CardActions>
             <Button
               variant="contained"
               size="large"
               endIcon={<ShoppingCartIcon />}
+              onClick={() => {
+                agregarAlCarrito(juego, cantidad);
+              }}
             >
               Comprar
             </Button>

@@ -13,3 +13,15 @@
   padding-top: 1rem;
   text-decoration: underline;
 }
+
+.item-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem;
+}
+
+.item-count button {
+  margin: 0 0.4rem;
+}
