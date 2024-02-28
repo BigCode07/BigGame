@@ -8,7 +8,9 @@ import Footer from "./components/Footer/Footer";
 import ItemListContainer from "./components/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import Carrito from "./components/Carrito";
+import Checkout from "./components/checkout";
 import { CartProvider } from "./components/context/CartContext";
+import Contacto from "./components/Contacto";
 function App() {
   return (
     <div>
@@ -20,7 +22,9 @@ function App() {
             <Route exact path="/" element={<ItemListContainer />} />
             <Route path="/juego/:id" element={<ItemDetailContainer />} />
             <Route path="/:plataforma" element={<ItemListContainer />} />
-            <Route path="/carrito" element={<Carrito />} />
+            <Route path="/carrito" element={<Carrito />} />{" "}
+            <Route path="/contacto" element={<Contacto />} />
+            <Route path="/checkout" element={<Checkout />} />
           </Routes>
           <Footer />
         </BrowserRouter>

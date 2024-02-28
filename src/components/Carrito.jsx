@@ -2,6 +2,9 @@ import { useContext } from "react";
 import { CartContext } from "./context/CartContext";
 import { Typography, Button, CardMedia, Grid } from "@mui/material";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
+import ShopIcon from "@mui/icons-material/Shop";
+import { Link } from "react-router-dom";
+
 const Carrito = () => {
   const { carrito, precioTotal, vaciarCarrito } = useContext(CartContext);
 
@@ -40,8 +43,13 @@ const Carrito = () => {
             Precio Total: ${precioTotal()}
           </Typography>
           <div className="price-carrito">
+            <Link to="/checkout">
+              <Button color="primary" variant="contained">
+                {<ShopIcon />} Comprar
+              </Button>
+            </Link>
             <Button color="primary" variant="contained" onClick={handleVaciar}>
-              {<DeleteForeverIcon />}
+              {<DeleteForeverIcon />}Cancelar
             </Button>
           </div>
         </>
