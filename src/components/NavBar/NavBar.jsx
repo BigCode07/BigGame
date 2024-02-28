@@ -14,27 +14,27 @@ const NavBar = () => {
           </Link>
         </li>
         <li>
-          <Link to={`/ps5`} className={isActive}>
+          <Link to={`/Ps5`} className={isActive}>
             PS5
           </Link>
         </li>
         <li>
-          <Link to={`/ps4`} className={isActive}>
+          <Link to={`/Ps4`} className={isActive}>
             PS4
           </Link>
         </li>
         <li>
-          <Link to={`/xbox-one`} className={isActive}>
+          <Link to={`/Xbox-One`} className={isActive}>
             Xbox One
           </Link>
         </li>
         <li>
-          <Link to={`/xbox-x`} className={isActive}>
+          <Link to={`/Xbox-X`} className={isActive}>
             Xbox X
           </Link>
         </li>
         <li>
-          <Link to={`/pc`} className={isActive}>
+          <Link to={`/Pc`} className={isActive}>
             PC
           </Link>
         </li>

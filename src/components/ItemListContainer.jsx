@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
-import pedirJuegos from "../components/pedirJuego.js";
+import { collection, getDocs, query, where } from "firebase/firestore";
+import { db } from "../firebase/config";
 import ItemList from "./ItemList";
 import "./Item.css";
 import { useParams } from "react-router-dom";
@@ -11,14 +12,16 @@ const ItemListContainer = () => {
   const plataforma = useParams().plataforma;
   console.log(plataforma);
   useEffect(() => {
-    pedirJuegos().then((res) => {
-      if (plataforma) {
-        setJuegos(res.filter((prod) => prod.plataform === plataforma));
-        setTiulo(plataforma);
-      } else {
-        setJuegos(res);
-        setTiulo("Juegos");
-      }
+    const juegosRef = collection(db, "Catalogo");
+    const q = plataforma
+      ? query(juegosRef, where("plataform", "==", plataforma))
+      : juegosRef;
+    getDocs(q).then((resp) => {
+      setJuegos(
+        resp.docs.map((doc) => {
+          return { ...doc.data(), id: doc.id };
+        })
+      );
     });
   }, [plataforma]);
   return (

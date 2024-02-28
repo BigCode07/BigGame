@@ -1,15 +1,16 @@
 import { useEffect, useState } from "react";
-import { pedirJuegoPorId } from "./pedirJuego";
+import { doc, getDoc } from "firebase/firestore";
 import ItemDetail from "./ItemDetail";
 import { useParams } from "react-router-dom";
-
+import { db } from "../firebase/config";
 const ItemDetailContainer = () => {
   const [juego, setJuego] = useState(null);
   const id = useParams().id;
 
   useEffect(() => {
-    pedirJuegoPorId(Number(id)).then((res) => {
-      setJuego(res);
+    const docRef = doc(db, "Catalogo", id);
+    getDoc(docRef).then((resp) => {
+      setJuego({ ...resp.data(), id: resp.id });
     });
   }, [id]);
 
